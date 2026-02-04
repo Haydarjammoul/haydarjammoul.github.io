@@ -32,3 +32,34 @@ ol{margin:0;padding-left:1.2rem}
   .toc{padding:8px}
   .container{margin-top:-20px;padding:12px}
 }
+
+
+.about-image,
+.life-image {
+  text-align: center;
+  margin-top: 14px;
+}
+
+.about-image img,
+.life-image img {
+  max-width: 100%;
+  width: 320px;          /* main size */
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.about-image .caption,
+.life-image .caption {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+/* Slightly larger on wide screens */
+@media (min-width: 900px) {
+  .about-image img,
+  .life-image img {
+    width: 360px;
+  }
+}
+
